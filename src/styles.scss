@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@use '../public/styles/fonts';
+@use '../public/styles/reset';
+@use '../public/styles/variables' as variable;
+
+body, html {
+  font-family: variable.$fontFamily;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: variable.$bg;
+}

@@ -1,0 +1,25 @@
+header {
+  border-bottom: 1px solid red;
+  background: #fff;
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {}
+    .action {
+      display: flex;
+      svg-icon{
+        width: 24px;
+        height: 24px;
+        color: red;
+        svg{
+          width: 24px;
+          height: 24px;
+
+        }
+      }
+    }
+  }
+
+}
