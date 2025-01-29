@@ -1,6 +1,7 @@
 @use '../public/styles/fonts';
 @use '../public/styles/reset';
 @use '../public/styles/variables' as variable;
+@use '../public/styles/classes';
 
 body, html {
   font-family: variable.$fontFamily;

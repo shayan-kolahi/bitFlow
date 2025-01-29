@@ -1,0 +1,24 @@
+@use "variables" as variable;
+
+// button
+.button {
+  background: variable.$color2;
+  color: variable.$text-white;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid variable.$color2;
+  border-radius: 11px;
+  text-align: right;
+  transition: background-color .3s ease;
+  cursor: pointer;
+  &:hover {
+    color: variable.$text-white;
+    background-color: variable.$color1;
+  }
+  &.small{
+    font-size: 14px;
+    height: 35px;
+  }
+}

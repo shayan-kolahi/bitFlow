@@ -1,7 +1,13 @@
+@use "../../../../../public/styles/variables" as variable;
+
 header {
-  border-bottom: 1px solid red;
-  background: #fff;
+  padding-top: 15px;
   .row{
+    padding: 8px 15px;
+    overflow: hidden;
+    border: 1px solid variable.$gray1;
+    background: variable.$text-white;
+    border-radius: variable.$border-radius;
     display: flex;
     justify-content: space-between;
     align-items: center;
