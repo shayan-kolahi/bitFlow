@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://api.wallex.ir/',
-  apiKey: '13586|50g4btKvMZEWAP4HP48aEgtpu0c4BmZGnICgmwKC'
+  apiUrl: 'https://api.nobitex.ir/',
+  apiKey: '7a422c86507aa741d433b50e054821a9abe73996'
 };
 
 

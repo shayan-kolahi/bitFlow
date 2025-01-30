@@ -1,13 +1,11 @@
 @use "../../../../../public/styles/variables" as variable;
 
 header {
-  padding-top: 15px;
+  background: variable.$text-white;
+  border-bottom: 1px solid variable.$gray1;
   .row{
-    padding: 8px 15px;
+    padding: 8px 0;
     overflow: hidden;
-    border: 1px solid variable.$gray1;
-    background: variable.$text-white;
-    border-radius: variable.$border-radius;
     display: flex;
     justify-content: space-between;
     align-items: center;

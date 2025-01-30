@@ -1,0 +1,76 @@
+@use "../../../../../public/styles/variables" as variable;
+
+.cryptocurrency-prices {
+  padding-top: 40px;
+  .container{
+    .title{
+      text-align: right;
+    }
+    .header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      .type{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .switch {
+          font-size: 20px;
+          position: relative;
+          width: 160px;
+          height: 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 2;
+          span{
+            cursor: pointer;
+            position: absolute;
+            z-index: 3;
+            width: 65px;
+            text-align: center;
+            font-size: 14px;
+            color: variable.$color1;
+            &:first-child{
+              right: 5px;
+            }
+            &:last-child{
+              left: 5px;
+            }
+          }
+          input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            z-index: -1;
+            background-color: variable.$color4;
+            transition: 0.4s;
+            border-radius: variable.$border-radius;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            &:before {
+              position: absolute;
+              content: "";
+              height: 24px;
+              width: 65px;
+              border-radius: variable.$border-radius;
+              right: 5px;
+              background-color: variable.$bg;
+              transition: 0.4s;
+            }
+          }
+          input:checked + .slider:before {
+            transform: translateX(-85px);
+          }
+        }
+      }
+    }
+  }
+}
