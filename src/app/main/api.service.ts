@@ -9,7 +9,7 @@ export class ApiService {
 
   constructor(private http: HttpClient, @Inject(ENVIRONMENT) public environment: any) {}
 
-  getStats(){
-    return this.http.get(this.environment.apiUrl + 'market/stats');
+  getStats(dataStatsSrcCurrency: string, dstCurrency: string){
+    return this.http.get(`${this.environment.apiUrl}market/stats?srcCurrency=${dataStatsSrcCurrency}&dstCurrency=${dstCurrency}`);
   }
 }

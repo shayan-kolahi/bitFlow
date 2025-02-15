@@ -72,5 +72,34 @@
         }
       }
     }
+    .main{
+      margin-top: 20px;
+      .eael-data-table {
+        width: 100%;
+        border-collapse: separate;
+        border: none;
+        margin: 0 auto;
+        direction: rtl;
+        border-spacing: 0;
+      }
+      .eael-data-table thead tr th,
+      .eael-data-table tbody tr td{
+        padding: 20px 15px 20px 15px;
+        font-size: 18px;
+        line-height: 1.35em;
+        border-radius: 0;
+        text-align: right;
+      }
+      .eael-data-table thead tr th {
+        background: variable.$color1;
+        color: variable.$text-white;
+        &:first-child{
+          border-radius: 0 variable.$border-radius variable.$border-radius 0;
+        }
+        &:last-child{
+          border-radius: variable.$border-radius 0 0 variable.$border-radius;
+        }
+      }
+    }
   }
 }
